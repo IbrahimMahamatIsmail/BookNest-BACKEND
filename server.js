@@ -36,7 +36,7 @@ app.use('/livres', require('./routers/livresRoute'));
 app.use('/utilisateurs', require('./routers/utilisateursRoute'));
 
 // Rendre le dossier public accessible publiquement
-app.use('/uploads', express.static(path.join(__dirname, 'public', 'uploads')));
+//app.use(express.static(path.join(__dirname, 'public')));
 
 // Test
 app.get('/', (req, res) => {

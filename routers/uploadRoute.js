@@ -24,7 +24,8 @@ router.post('/', verifierToken(), isAdmin, adminLimiter, upload.single('image'),
   if (!req.file) {
     return res.status(400).json({ message: 'Aucun fichier téléchargé' });
   }
-  const fileUrl = `/uploads/${req.file.filename}`;
+  // const fileUrl = `/uploads/${req.file.filename}`;
+  const fileUrl = `${process.env.BASE_URL}/uploads/${req.file.filename}`;
   res.json({
     message: 'Image téléchargée avec succès',
     url: fileUrl,

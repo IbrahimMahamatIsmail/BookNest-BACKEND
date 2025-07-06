@@ -8,7 +8,7 @@ const errorHandler = require('./middlewares/errorHandler');
 const PORT = process.env.PORT || 4001;
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://booknest-front.vercel.app/'
+  'https://booknest-front.vercel.app'
 ];
 
 app.use(helmet({

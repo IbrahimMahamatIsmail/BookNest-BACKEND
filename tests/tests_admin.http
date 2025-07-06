@@ -1,5 +1,5 @@
 ### Ajouter un livre (admin uniquement)
-POST http://localhost:3001/admin/add-livre
+POST https://booknest-backend-z9vo.onrender.com/admin/add-livre
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ2MzAwMjg0LCJleHAiOjE3NDYzMDc0ODR9.LHUgoiAQQfHEjZJrTi_mkg5f6SU01U0dbc4C5Aunz6U
 Content-Type: application/json
 
@@ -17,7 +17,7 @@ Content-Type: application/json
 
 
 ### Modifier un livre
-PUT http://localhost:3001/admin/update-livre/14
+PUT https://booknest-backend-z9vo.onrender.com/admin/update-livre/14
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ2MzAwMjg0LCJleHAiOjE3NDYzMDc0ODR9.LHUgoiAQQfHEjZJrTi_mkg5f6SU01U0dbc4C5Aunz6U
 Content-Type: application/json
 
@@ -35,29 +35,29 @@ Content-Type: application/json
 
 
 ### SUPPRIMER UN LIVRE UNIQUEMENT PAR l'ADMIN
-DELETE http://localhost:3001/admin/delete-livre/14
+DELETE https://booknest-backend-z9vo.onrender.com/admin/delete-livre/14
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ2MzAwMjg0LCJleHAiOjE3NDYzMDc0ODR9.LHUgoiAQQfHEjZJrTi_mkg5f6SU01U0dbc4C5Aunz6U
 
 
 ### supprimer un avis seul l'admin
-DELETE http://localhost:3001/admin/delete-avis/2
+DELETE https://booknest-backend-z9vo.onrender.com/admin/delete-avis/2
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ2MzAwMjg0LCJleHAiOjE3NDYzMDc0ODR9.LHUgoiAQQfHEjZJrTi_mkg5f6SU01U0dbc4C5Aunz6U
 
 
 ### Afficher tous les utilisateurs (admin uniquement)
-GET http://localhost:3001/admin/utilisateurs/
+GET https://booknest-backend-z9vo.onrender.com/admin/utilisateurs/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ2MzAwMjg0LCJleHAiOjE3NDYzMDc0ODR9.LHUgoiAQQfHEjZJrTi_mkg5f6SU01U0dbc4C5Aunz6U
 
 
 ### Afficher un  utilisateurs par son ID (admin uniquement)
-GET http://localhost:3001/admin/utilisateurs/2
+GET https://booknest-backend-z9vo.onrender.com/admin/utilisateurs/2
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ2MzAwMjg0LCJleHAiOjE3NDYzMDc0ODR9.LHUgoiAQQfHEjZJrTi_mkg5f6SU01U0dbc4C5Aunz6U
 
 
 ### SUPPRIMER UN UTILISATEUR UNIQUEMENT PAR UN ADMINISTRATEUR
-DELETE http://localhost:3001/admin/utilisateurs/2
+DELETE https://booknest-backend-z9vo.onrender.com/admin/utilisateurs/2
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ2MzAwMjg0LCJleHAiOjE3NDYzMDc0ODR9.LHUgoiAQQfHEjZJrTi_mkg5f6SU01U0dbc4C5Aunz6U
 
 ### Afficher les comptes inactifs et supprimés RGPD
-GET http://localhost:3001/admin/logs-suppressions
+GET https://booknest-backend-z9vo.onrender.com/admin/logs-suppressions
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ2MzAwMjg0LCJleHAiOjE3NDYzMDc0ODR9.LHUgoiAQQfHEjZJrTi_mkg5f6SU01U0dbc4C5Aunz6U

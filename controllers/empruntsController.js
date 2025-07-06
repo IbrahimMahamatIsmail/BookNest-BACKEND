@@ -17,7 +17,7 @@ exports.emprunterLivre = async (req, res) => {
       return res.status(400).json({ message: 'Vous avez déjà emprunté ce livre. Veuillez le retourner avant de l\'emprunter à nouveau.' });
     }
     const emprunt = await empruntMapper.create(utilisateurId, livreId);
-    res.status(201).json({ message: 'Livre 📚 emprunté avec succès', emprunt });
+    res.status(201).json({ message: 'Livre emprunté avec succès', emprunt });
   } catch (error) {
     res.status(500).json({ message: 'Erreur lors de l\'emprunt' });
   }
@@ -39,9 +39,9 @@ exports.retournerLivre = async (req, res) => {
     const retour = await empruntMapper.retourner(empruntId);
     // console.log("Livre retourné avec succès :", retour);
     res.status(200).json({ 
-      message: 'Livre retourné avec succès📚',
+      message: 'Livre retourné avec succès',
       retour,
-      suggestion: `Merci pour votre lecture ! N’hésitez pas à partager votre avis ici 👉 http://localhost:3001/avis/${emprunt.livre_id}` });
+      suggestion: `Merci pour votre lecture ! N’hésitez pas à partager votre avis ici http://localhost:3001/avis/${emprunt.livre_id}` });
   } catch (error) {
     console.error("Erreur lors du retour :", error);
     res.status(500).json({ message: 'Erreur lors du retour' });

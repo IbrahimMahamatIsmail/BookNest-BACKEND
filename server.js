@@ -8,11 +8,11 @@ const errorHandler = require('./middlewares/errorHandler');
 const PORT = process.env.PORT || 4001;
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://booknest-front.vercel.app'
+  'https://booknest-front-k9vb6424u-ibrahimmahamatismails-projects.vercel.app'
 ];
 
 app.use(helmet({
-  crossOriginResourcePolicy: { policy: "same-site" }, // pour des images statiques dpg-d1l8677diees73fbgtj0-a
+  crossOriginResourcePolicy: { policy: "same-site" }, // pour des images statiques
   contentSecurityPolicy: false, // sinon je bloque les styles/scripts locaux en dev
 }));
 app.use(cors({

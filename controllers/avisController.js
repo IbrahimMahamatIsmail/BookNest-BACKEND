@@ -13,7 +13,7 @@ exports.ajouterAvis = async (req, res) => {
     }
     const dejaAvis = await avisMapper.dejaLaisseAvis(utilisateurId, livreId);
     if (dejaAvis) {
-      return res.status(400).json({ message: "Vous avez déjà laissé un avis sur ce livre 📚💬" });
+      return res.status(400).json({ message: "Vous avez déjà laissé un avis sur ce livre " });
     }
     
     if (!commentaire || typeof commentaire !== 'string' || commentaire.length < 5) {
@@ -23,9 +23,9 @@ exports.ajouterAvis = async (req, res) => {
       return res.status(400).json({ message: 'La note doit être un nombre entre 1 et 5' });
     }
     const avisCree = await avisMapper.create({ utilisateurId, livreId, commentaire, note });
-    res.status(201).json({ message: 'Avis ajouté avec succès. Merci pour votre avis 💬 !', avis: avisCree });
+    res.status(201).json({ message: 'Avis ajouté avec succès. Merci pour votre avis !', avis: avisCree });
   } catch (error) {
-    console.error('[ERREUR] avisController.ajouterAvis', error);
+    console.error('avisController.ajouterAvis', error);
     res.status(500).json({ message: 'Erreur lors de l\'ajout de l\'avis' });
   }
 };
@@ -36,7 +36,7 @@ exports.getAvisParLivre = async (req, res) => {
     const avis = await avisMapper.findByLivre(livreId);
     res.json(avis);
   } catch (error) {
-    console.error('[ERREUR] getAvisParLivre :', error);
+    console.error('getAvisParLivre :', error);
     res.status(500).json({ message: 'Erreur lors de la récupération des avis' });
   }
 };

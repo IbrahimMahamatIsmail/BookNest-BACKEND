@@ -119,6 +119,6 @@ async function supprimerDefinitivement() {
 })();
 
 
-//const maintenant = new Date(); PGPASSWORD=HqY3nJrQkvBXB61RBz0zO0KiFf9rdrik psql -h dpg-d1l8677diees73fbgtj0-a.oregon-postgres.render.com -U booknest booknest_lkwg
+//const maintenant = new Date(); 
 //const ilYaUneMinute = new Date(maintenant.getTime() - 1 * 60 * 1000)
 //hier.setMinutes(hier.getMinutes() - 1);

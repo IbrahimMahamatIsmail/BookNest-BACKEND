@@ -37,7 +37,7 @@ exports.getLogsSuppressions = async (req, res) => {
     const logs = await logsMapper.getAll();
     res.status(200).json(logs);
   } catch (err) {
-    console.error("[ERREUR] Récupération des logs RGPD :", err);
+    console.error("Récupération des logs RGPD :", err);
     res.status(500).json({ message: "Erreur lors de la récupération des logs RGPD" });
   }
 };
@@ -57,7 +57,7 @@ exports.updateLivre = async (req, res) => {
     const updated = await livresMapper.update(req.params.id, req.body);
     res.json({ message: 'Livre mis à jour', updated });
   } catch (error) {
-    console.error('[ERREUR] adminController.updateLivre :', error);
+    console.error('adminController.updateLivre :', error);
     res.status(500).json({ message: 'Erreur serveur' });
   }
 };
@@ -78,7 +78,7 @@ exports.deleteAvis = async (req, res) => {
     if (!avis) return res.status(404).json({ message: 'Avis non trouvé' });
     res.json({ message: 'Avis supprimé' });
   } catch (error) {
-    console.error("[ERREUR] Suppression de l'avis :", error);
+    console.error("Suppression de l'avis :", error);
     res.status(500).json({ message: 'Erreur lors de la suppression de l\'avis adminC' });
   }
 };

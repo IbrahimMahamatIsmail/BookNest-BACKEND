@@ -1,13 +1,13 @@
 ### Emprunter un livre /emprunts/:livreId
-POST http://localhost:3001/emprunts/2
+POST https://booknest-backend-z9vo.onrender.com/emprunts/2
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InV0aWxpc2F0ZXVyIiwiaWF0IjoxNzQ2MzAwMTc1LCJleHAiOjE3NDYzMDczNzV9.-sjMysaFidhphqj7yY3iTy3XFvjWJd1DT9PokZAWKRg
 
 
 ### Voir mes emprunts 
-GET http://localhost:3001/emprunts/mes-emprunts
+GET https://booknest-backend-z9vo.onrender.com/emprunts/mes-emprunts
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InV0aWxpc2F0ZXVyIiwiaWF0IjoxNzQ2MzAwMTc1LCJleHAiOjE3NDYzMDczNzV9.-sjMysaFidhphqj7yY3iTy3XFvjWJd1DT9PokZAWKRg
 
 
 ### Retourner un livre /emprunts/:empruntId/retour
-PUT http://localhost:3001/emprunts/3/retour
+PUT https://booknest-backend-z9vo.onrender.com/emprunts/3/retour
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InV0aWxpc2F0ZXVyIiwiaWF0IjoxNzQ2MzAwMTc1LCJleHAiOjE3NDYzMDczNzV9.-sjMysaFidhphqj7yY3iTy3XFvjWJd1DT9PokZAWKRg

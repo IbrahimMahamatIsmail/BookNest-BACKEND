@@ -8,7 +8,7 @@ exports.getCategories = async (req, res) => {
     // console.log('[DEBUG] Catégories renvoyées au client:', categories);
     res.json(categories);
   } catch (err) {
-    console.error('[ERREUR] getCategories controller :', err);
+    console.error('getCategories controller :', err);
     res.status(500).json({ error: 'Erreur serveur' });
   }
 };
@@ -19,7 +19,7 @@ exports.getAllLivres = async (req, res) => {
     const livres = await livresMapper.getAll();
     res.json({livres});
   } catch (err) {
-    console.error('[ERREUR] lors du getAllLivres:', err);
+    console.error('lors du getAllLivres:', err);
     res.status(500).json({ error: 'Erreur serveur lors de la récupération des livres controller' });
   }
 };
@@ -75,7 +75,7 @@ exports.getContenuCompletLivre = async (req, res) => {
       contenu,
       date_retour: dernierEmprunt?.date_retour || null, });
   } catch (err) {
-    // console.log('[ERREUR] getContenuLivre:', err);
+    // console.log('getContenuLivre:', err);
     res.status(500).json({ message: "Erreur lors de la récupération du contenu du livre" });
   }
 };
@@ -123,7 +123,7 @@ exports.searchLivreByTitre = async (req, res) => {
     if (result.length === 0) return res.status(404).json({ message: 'Aucun livre trouvé avec ce titre'});
     res.json({ livres: result});
   } catch (err) {
-    console.error('[ERREUR] Recherche du livre par titre:', err);
+    console.error('Recherche du livre par titre:', err);
     res.status(500).json({ message: 'Erreur erreur lors de la recherche du livre par titre'})
   }
 };

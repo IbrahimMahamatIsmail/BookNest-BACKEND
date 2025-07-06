@@ -1,5 +1,5 @@
 ### Inscription utilisateur (admin auto si email = booknestapi@gmail.com)
-POST http://localhost:3001/utilisateurs/register
+POST https://booknest-backend-z9vo.onrender.com/utilisateurs/register
 Content-Type: application/json
 
 {
@@ -9,7 +9,7 @@ Content-Type: application/json
 }
 
 #### Inscription 
-POST http://localhost:3001/utilisateurs/register
+POST https://booknest-backend-z9vo.onrender.com/utilisateurs/register
 Content-Type: application/json
 
 {
@@ -19,7 +19,7 @@ Content-Type: application/json
 }
 
 #### Inscription 
-POST http://localhost:3001/utilisateurs/register
+POST https://booknest-backend-z9vo.onrender.com/utilisateurs/register
 Content-Type: application/json
 
 {
@@ -29,7 +29,7 @@ Content-Type: application/json
 }
 
 #### Inscription 
-POST http://localhost:3001/utilisateurs/register
+POST https://booknest-backend-z9vo.onrender.com/utilisateurs/register
 Content-Type: application/json
 
 {
@@ -39,7 +39,7 @@ Content-Type: application/json
 }
 
 ### Mot de passe oublié
-POST http://localhost:3001/utilisateurs/mot-de-passe-oublie
+POST https://booknest-backend-z9vo.onrender.com/utilisateurs/mot-de-passe-oublie
 Content-Type: application/json
 
 {
@@ -47,7 +47,7 @@ Content-Type: application/json
 }
 
 ### Mot de passe oublié
-POST http://localhost:3001/utilisateurs/mot-de-passe-oublie
+POST https://booknest-backend-z9vo.onrender.com/utilisateurs/mot-de-passe-oublie
 Content-Type: application/json
 
 {
@@ -55,7 +55,7 @@ Content-Type: application/json
 }
 
 ### Connexion utilisateur (avec console.log debug)
-POST http://localhost:3001/utilisateurs/login
+POST https://booknest-backend-z9vo.onrender.com/utilisateurs/login
 Content-Type: application/json
 
 {
@@ -64,7 +64,7 @@ Content-Type: application/json
 }
 
 ### Connexion utilisateur (avec console.log debug)
-POST http://localhost:3001/utilisateurs/login
+POST https://booknest-backend-z9vo.onrender.com/utilisateurs/login
 Content-Type: application/json
 
 {
@@ -73,7 +73,7 @@ Content-Type: application/json
 }
 
 ### Connexion utilisateur (avec console.log debug)
-POST http://localhost:3001/utilisateurs/login
+POST https://booknest-backend-z9vo.onrender.com/utilisateurs/login
 Content-Type: application/json
 
 {

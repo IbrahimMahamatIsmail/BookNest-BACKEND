@@ -1,5 +1,5 @@
 ### Laisser un avis (après retour d’un emprunt) /avis/:livreId
-POST http://localhost:3001/avis/3  
+POST https://booknest-backend-z9vo.onrender.com/avis/3  
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InV0aWxpc2F0ZXVyIiwiaWF0IjoxNzQ1MTYwNTM1LCJleHAiOjE3NDUxNjc3MzV9.yMoUVKzPII-DUQ4J8aBArAY9zrZlY5dDMZY5p9f6nhU
 Content-Type: application/json
 
@@ -11,4 +11,4 @@ Content-Type: application/json
 
 
 ### Récupérer les avis d’un livre /avis/livre/:livreId
-GET http://localhost:3001/avis/livre/3
+GET https://booknest-backend-z9vo.onrender.com/avis/livre/3

@@ -70,8 +70,8 @@ exports.register = async (req, res) => {
         pass: process.env.EMAIL_PASS,
       }
     });
-    const { FRONT_URL } = require('../config');
-    const lien = `${FRONT_URL}/login`;
+    //const { FRONT_URL } = require('../config');
+    const lien = `https://booknest-front.vercel.app/login`;
     const htmlMessage = `
       <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f4; padding: 30px;">
         <div style="max-width: 600px; margin: auto; background: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
@@ -187,8 +187,8 @@ exports.demandeReinitialisation = async (req, res) => {
       }
     });
     
-    const { FRONT_URL } = require('../config');
-    const lien = `${FRONT_URL}/reinitialiser-mot-de-passe/${token}`;
+    //const { FRONT_URL } = require('../config');
+    const lien = `https://booknest-front.vercel.app/reinitialiser-mot-de-passe/${token}`;
     await transporter.sendMail({
       to: email,
       subject: '📬 Réinitialisation de votre mot de passe Booknest',

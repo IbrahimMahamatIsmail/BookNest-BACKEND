@@ -1,0 +1,82 @@
+### Inscription utilisateur (admin auto si email = booknestapi@gmail.com)
+POST http://localhost:3001/utilisateurs/register
+Content-Type: application/json
+
+{
+  "nom": "Ibrahim",
+  "email": "imis.brahimoha@gmail.com",
+  "mot_de_passe": "Mot_super1@_mdp"
+}
+
+#### Inscription 
+POST http://localhost:3001/utilisateurs/register
+Content-Type: application/json
+
+{
+  "nom": "Tchad",
+  "email": "tchadcnou.td@gmail.com",
+  "mot_de_passe": "Mot_super1@_mdp"
+}
+
+#### Inscription 
+POST http://localhost:3001/utilisateurs/register
+Content-Type: application/json
+
+{
+  "nom": "BRAHIM",
+  "email": "65311905ibrahim@gmail.com",
+  "mot_de_passe": "Mot_super1@_mdp"
+}
+
+#### Inscription 
+POST http://localhost:3001/utilisateurs/register
+Content-Type: application/json
+
+{
+  "nom": "HADddI",
+  "email": "bissanemehdi@gmail.com",
+  "mot_de_passe": "Mot_super1@_mdp"
+}
+
+### Mot de passe oublié
+POST http://localhost:3001/utilisateurs/mot-de-passe-oublie
+Content-Type: application/json
+
+{
+  "email": "ibrahim@booknest.com"
+}
+
+### Mot de passe oublié
+POST http://localhost:3001/utilisateurs/mot-de-passe-oublie
+Content-Type: application/json
+
+{
+  "email": "bissanemehdi@gmail.com"
+}
+
+### Connexion utilisateur (avec console.log debug)
+POST http://localhost:3001/utilisateurs/login
+Content-Type: application/json
+
+{
+  "email": "booknestapi@gmail.com",
+  "mot_de_passe": "Mot_super1@_mdp"
+}
+
+### Connexion utilisateur (avec console.log debug)
+POST http://localhost:3001/utilisateurs/login
+Content-Type: application/json
+
+{
+  "email": "imisbrahim.moha@gmail.com",
+  "mot_de_passe": "Mot_super1@_mdp"
+}
+
+### Connexion utilisateur (avec console.log debug)
+POST http://localhost:3001/utilisateurs/login
+Content-Type: application/json
+
+{
+  "email": "imisbrahim.moha@gmail.com",
+  "mot_de_passe": "Mot_super1@_mdp"
+}

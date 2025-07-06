@@ -1,0 +1,19 @@
+### Afficher tous les livres
+GET http://localhost:3001/livres
+
+### Afficher un livre par ID
+GET http://localhost:3001/livres/1
+
+### Afficher tout les catégories de livres
+GET http://localhost:3001/livres/categories
+
+### Afficher une catégorie de livre
+GET http://localhost:3001/livres/categories/Roman
+
+
+###
+GET http://localhost:3001/livres/3/contenu/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InV0aWxpc2F0ZXVyIiwiaWF0IjoxNzQ2MzAwMTc1LCJleHAiOjE3NDYzMDczNzV9.-sjMysaFidhphqj7yY3iTy3XFvjWJd1DT9PokZAWKRg
+
+### Rechercher un livre par son titre
+GET http://localhost:3001/livres/search?titre=La Peste

@@ -1,0 +1,14 @@
+RECEVOIR, 0N AVIS, 11 LIVRES
+AVIS: code_avis:, id, commentaire, note, date_avis
+LAISSER, 11 UTILISATEURS, 0N AVIS
+LOGS_RGPD_SUPPRESSIONS: code_logs:, id, nom, email, date_suppression, raison
+
+LIVRES: code_livres:, id, titre, auteur, description, categorie , disponible, image_url, stock, extrait, contenu, date_ajout, date_modification
+REALISER, 11 UTILISATEURS, 0N EMPRUNTS
+UTILISATEURS: code_utilisateurs:, id, nom, email, mot_de_passe, last_login, date_inscription, reset_token, alert_suppression_envoyee
+LIEE, 11 UTILISATEURS, 01 LOGS_RGPD_SUPPRESSIONS
+
+CONCERNE, 0N EMPRUNTS, 11 LIVRES
+EMPRUNTS: code_emprunts:, id, date_emprunt, date_retour, rendu
+AVOIR, 1N UTILISATEURS, 11 ROLES
+ROLES: code_roles:, id, nom

@@ -1,0 +1,7 @@
+.env
+node_modules/
+scripts/
+.env.backup
+backup_render.sh
+backup_cron.log
+backups/

@@ -1,0 +1,47 @@
+{
+  "width": 622,
+  "height": 567,
+  "cx": [
+    [ "RECEVOIR", 69 ],
+    [ "AVIS", 199 ],
+    [ "LAISSER", 357 ],
+    [ "LOGS_RGPD_SUPPRESSIONS", 518 ],
+    [ "LIVRES", 69 ],
+    [ "REALISER", 199 ],
+    [ "UTILISATEURS", 357 ],
+    [ "LIEE", 518 ],
+    [ "CONCERNE", 69 ],
+    [ "EMPRUNTS", 199 ],
+    [ "AVOIR", 357 ],
+    [ "ROLES", 518 ]
+  ],
+  "cy": [
+    [ "RECEVOIR", 77 ],
+    [ "AVIS", 77 ],
+    [ "LAISSER", 77 ],
+    [ "LOGS_RGPD_SUPPRESSIONS", 77 ],
+    [ "LIVRES", 288 ],
+    [ "REALISER", 288 ],
+    [ "UTILISATEURS", 288 ],
+    [ "LIEE", 288 ],
+    [ "CONCERNE", 499 ],
+    [ "EMPRUNTS", 499 ],
+    [ "AVOIR", 499 ],
+    [ "ROLES", 499 ]
+  ],
+  "shift": [
+    [ "RECEVOIR,AVIS,0", 0 ],
+    [ "RECEVOIR,LIVRES,0", 0 ],
+    [ "LAISSER,UTILISATEURS,0", 0 ],
+    [ "LAISSER,AVIS,0", 0 ],
+    [ "REALISER,UTILISATEURS,0", 0 ],
+    [ "REALISER,EMPRUNTS,0", 0 ],
+    [ "LIEE,UTILISATEURS,0", 0 ],
+    [ "LIEE,LOGS_RGPD_SUPPRESSIONS,0", 0 ],
+    [ "CONCERNE,EMPRUNTS,0", 0 ],
+    [ "CONCERNE,LIVRES,0", 0 ],
+    [ "AVOIR,UTILISATEURS,0", 0 ],
+    [ "AVOIR,ROLES,0", 0 ]
+  ],
+  "ratio": []
+}

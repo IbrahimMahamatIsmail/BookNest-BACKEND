@@ -1,0 +1,20 @@
+%%mocodo
+:::
+AVIS: code_avis:, id, commentaire, note, date_avis
+:::
+LOGS_RGPD_SUPPRESSIONS: code_logs:, id, nom, email, date_suppression, raison
+:
+
+
+:
+LIVRES: code_livres:, id, titre, auteur, description, categorie, disponible, image_url, stock, extrait, contenu, date_ajout, date_modification, #code_avis: > AVIS > code_avis:, #code_emprunts: > EMPRUNTS > code_emprunts:
+:::
+UTILISATEURS: code_utilisateurs:, id, nom, email, mot_de_passe, last_login, date_inscription, reset_token, alert_suppression_envoyee, #code_avis: > AVIS > code_avis:, #code_emprunts: > EMPRUNTS > code_emprunts:, #code_logs: > LOGS_RGPD_SUPPRESSIONS > code_logs:
+:::
+
+
+:::
+EMPRUNTS: code_emprunts:, id, date_emprunt, date_retour, rendu
+:::
+ROLES: code_roles:, id, nom, #code_utilisateurs: > UTILISATEURS > code_utilisateurs:
+:

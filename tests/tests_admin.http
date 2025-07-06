@@ -1,0 +1,63 @@
+### Ajouter un livre (admin uniquement)
+POST http://localhost:3001/admin/add-livre
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ2MzAwMjg0LCJleHAiOjE3NDYzMDc0ODR9.LHUgoiAQQfHEjZJrTi_mkg5f6SU01U0dbc4C5Aunz6U
+Content-Type: application/json
+
+{
+  "titre": "Test Book 1",
+  "auteur": "Auteur Admin",
+  "description": "Super livre1",
+  "categorie": "Test_d_ajout1",
+  "disponible": true,
+  "image_url": null,
+  "stock": 42,
+  "extrait": "Extrait du premier livre ajouté 1 par l'admin",
+  "contenu": "Premier contenu 1 du livre ajouté par l'admin"
+}
+
+
+### Modifier un livre
+PUT http://localhost:3001/admin/update-livre/14
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ2MzAwMjg0LCJleHAiOjE3NDYzMDc0ODR9.LHUgoiAQQfHEjZJrTi_mkg5f6SU01U0dbc4C5Aunz6U
+Content-Type: application/json
+
+{
+  "titre": "Titre modifié",
+  "auteur": "Auteur Admin",
+  "description": "Mise à jour",
+  "categorie": "Roman",
+  "disponible": true,
+  "image_url": null,
+  "stock": 10,
+  "extrait": "Premier extrait modifie par l'admin",
+  "contenu": "Premier contenu modifie par l'admin"
+}
+
+
+### SUPPRIMER UN LIVRE UNIQUEMENT PAR l'ADMIN
+DELETE http://localhost:3001/admin/delete-livre/14
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ2MzAwMjg0LCJleHAiOjE3NDYzMDc0ODR9.LHUgoiAQQfHEjZJrTi_mkg5f6SU01U0dbc4C5Aunz6U
+
+
+### supprimer un avis seul l'admin
+DELETE http://localhost:3001/admin/delete-avis/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ2MzAwMjg0LCJleHAiOjE3NDYzMDc0ODR9.LHUgoiAQQfHEjZJrTi_mkg5f6SU01U0dbc4C5Aunz6U
+
+
+### Afficher tous les utilisateurs (admin uniquement)
+GET http://localhost:3001/admin/utilisateurs/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ2MzAwMjg0LCJleHAiOjE3NDYzMDc0ODR9.LHUgoiAQQfHEjZJrTi_mkg5f6SU01U0dbc4C5Aunz6U
+
+
+### Afficher un  utilisateurs par son ID (admin uniquement)
+GET http://localhost:3001/admin/utilisateurs/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ2MzAwMjg0LCJleHAiOjE3NDYzMDc0ODR9.LHUgoiAQQfHEjZJrTi_mkg5f6SU01U0dbc4C5Aunz6U
+
+
+### SUPPRIMER UN UTILISATEUR UNIQUEMENT PAR UN ADMINISTRATEUR
+DELETE http://localhost:3001/admin/utilisateurs/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ2MzAwMjg0LCJleHAiOjE3NDYzMDc0ODR9.LHUgoiAQQfHEjZJrTi_mkg5f6SU01U0dbc4C5Aunz6U
+
+### Afficher les comptes inactifs et supprimés RGPD
+GET http://localhost:3001/admin/logs-suppressions
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ2MzAwMjg0LCJleHAiOjE3NDYzMDc0ODR9.LHUgoiAQQfHEjZJrTi_mkg5f6SU01U0dbc4C5Aunz6U
